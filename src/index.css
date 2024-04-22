@@ -1,0 +1,8 @@
+.parent {
+    background-color: gray;
+    display: flex;
+}
+.card1 {
+    width: 50%;
+    border: 1px solid black;
+}
