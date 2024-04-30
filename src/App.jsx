@@ -78,31 +78,38 @@ export default function App() {
    <div className='parent'>
      <div className="card1">
      <PersonalInfo name2={name} email2={email} phone2={phone} storeEmail2={storeEmail}  storeName2={storeName} storePhone2={storePhone} handleSubmit2={handleSubmit} />
+     <hr />
      <br />
      <EducationalInfo schoolName1={schoolName} titleOfStudy1={titleOfStudy} dateOfStudy1={dateOfStudy} dateOfFinish1={dateOfFinish} schoolNameSetting1={schoolNameSetting} titleOfStudySetting1={titleOfStudySetting} dateOfStudySetting1={dateOfStudySetting} dateOfFinishSetting1={dateOfFinishSetting} preventSubmit1={preventSubmit}/>
+     <hr />
      <br />
      <PracticalInfo preventSubmit3={preventSubmit} companyName3={companyName} setCompanyNamefun3={setCompanyNamefun} positionTitle3={positionTitle} setPositionTitlefun3={setPositionTitlefun} jobDescription3={jobDescription} setJobDescriptionfun3={setJobDescriptionfun} />
+     <hr />
     </div>
     <div className='card2'>
-      <div>
-          <h3>Name: {name}</h3>
-          <h3>Email: {email}</h3>
-          <h3>Phone: {phone}</h3>
+      <div className='personal'>
+          <h3>Name: <span>{name}</span></h3>
+          <h3>Email:<span> {email}</span></h3>
+          <h3>Phone:<span> {phone}</span></h3>
       </div>
+      <br />
+      <br />
       <br />
       
-      <div>
-        <h3>School Name: {schoolName}</h3>
-        <h3>Title of Study: {titleOfStudy}</h3>
-        <h3>Date of Study: {dateOfStudy}</h3>
-        <h3>Date of Finish: {dateOfFinish}</h3>
+      <div className='educational'>
+        <h3>School Name:<span>{schoolName}</span></h3>
+        <h3>Title of Study:<span>{titleOfStudy}</span></h3>
+        <h3>Date of Study: <span>{dateOfStudy}</span></h3>
+        <h3>Date of Finish:<span>{dateOfFinish}</span></h3>
         
       </div>
+     
       <br />
-      <div>
-        <h3>Company Name: {companyName}</h3>
-        <h3>Position Title: {positionTitle}</h3>
-        <h3>Job Description: {jobDescription}</h3>
+      <br />
+      <div className='practical'>
+        <h3>Company Name:<span> {companyName}</span></h3>
+        <h3>Position Title:<span> {positionTitle}</span></h3>
+        <h3>Job Description: <span>{jobDescription}</span></h3>
         
       </div>
 

@@ -10,6 +10,7 @@ export default function PersonalInfo({name2, email2, phone2, storeName2, storeEm
     handleSubmit2: PropTypes.func.isRequired
   };
 
+
   return (
     <div>  
     <p>Personal Information</p>
